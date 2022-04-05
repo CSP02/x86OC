@@ -50,7 +50,12 @@ RByMBinaryMap.set('DI', '101')
 RByMBinaryMap.set('D16', '110')
 RByMBinaryMap.set('BX', '111')
 
-
+const NoOperandsInstructionBinaryMap = new Map()
+NoOperandsInstructionBinaryMap.get('XLAT', 'D7h')
+NoOperandsInstructionBinaryMap.get('LAHF', '9Fh')
+NoOperandsInstructionBinaryMap.get('SAHF', '9E')
+NoOperandsInstructionBinaryMap.get('PUSHF', '9C')
+NoOperandsInstructionBinaryMap.get('POPF', '9D')
 
 module.exports = {
     BinaryHexMap: BinaryHexMap,
