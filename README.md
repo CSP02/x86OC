@@ -9,7 +9,13 @@ An opcode converter for x86 microprocessor instructions.
 # Representation of different addressing modes in console:
 Bg-color | Fg-color | Addressing Mode
 -------- | -------- | ---------------
-![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+) | ![#000000](https://via.placeholder.com/15/000000/000000?text=+) | Immediate
+![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=White) | ![#000000](https://via.placeholder.com/15/000000/000000?text=Black) | Immediate
+![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=Red) | ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=White) | Invalid addressing
+![#9e00c2](https://via.placeholder.com/15/9e00c2/000000?text=Purple) | ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=White) | Register to Register
+![#003e8a](https://via.placeholder.com/15/003e8a/000000?text=Blue) | ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=White) | Register to Memory
+![#0b8a00](https://via.placeholder.com/15/0b8a00/000000?text=Green) | ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=White) | Memory to Register-8Bit
+![#a8c200](https://via.placeholder.com/15/a8c200/000000?text=Yellow) | ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=White) | Memory to Register-16Bit
+
 # Note:
 **This package uses nodejs. so you should have installed nodejs in your device.**
 # Note:
