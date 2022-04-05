@@ -1,5 +1,5 @@
 # x86OC
-![x86OC](https://github.com/Chandra-sekhar-pilla/x86OC/Resources/x86OC.png)
+![x86OC](https://github.com/Chandra-sekhar-pilla/x86OC/blob/main/Resources/x86OC.png)
 An opcode converter for x86 microprocessor instructions.
 
 # Usage:
