@@ -8,6 +8,7 @@ An opcode converter for x86 microprocessor instructions.
 
 # Representation of different addressing modes in console:
 Bg-color | Fg-color | Addressing Mode
+-------- | -------- | ---------------
 ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+) | ![#000000](https://via.placeholder.com/15/000000/000000?text=+) | Immediate
 # Note:
 **This package uses nodejs. so you should have installed nodejs in your device.**
