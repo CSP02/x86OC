@@ -9,7 +9,7 @@ An opcode converter for x86 microprocessor instructions.
 # Representation of different addressing modes in console:
 Bg-color | Fg-color | Addressing Mode
 -------- | -------- | ---------------
-![#ffffff](https://via.placeholder.com/150x40/ffffff/000000?text=White) | ![#000000](https://via.placeholder.com/150x40/000000/000000?text=Black) | Immediate
+![#ffffff](https://via.placeholder.com/150x40/ffffff/000000?text=White) | ![#000000](https://via.placeholder.com/150x40/000000/ffffff?text=Black) | Immediate
 ![#ff0000](https://via.placeholder.com/150x40/ff0000/000000?text=Red) | ![#ffffff](https://via.placeholder.com/150x40/ffffff/000000?text=White) | Invalid addressing
 ![#9e00c2](https://via.placeholder.com/150x40/9e00c2/000000?text=Purple) | ![#ffffff](https://via.placeholder.com/150x40/ffffff/000000?text=White) | Register to Register
 ![#003e8a](https://via.placeholder.com/150x40/003e8a/000000?text=Blue) | ![#ffffff](https://via.placeholder.com/150x40/ffffff/000000?text=White) | Register to Memory
