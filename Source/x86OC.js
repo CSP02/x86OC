@@ -26,7 +26,7 @@ function findInstructionType(instructions) {
         instruction = instructions[0]
         switch (instruction) {
             case InstructionSetMap.get('DTI')[InstructionSetMap.get('DTI').indexOf(instruction)]:
-                DTI.findAddressingMode(instructions)
+                DTI.findAddressingModeAndGenOpCode(instructions);
                 break;
 
             default:
@@ -36,8 +36,6 @@ function findInstructionType(instructions) {
     } else {
         if (instructions.toLowerCase() == 'quit')
             readline.close()
-        else
-            ask()
     }
     ask()
 }
