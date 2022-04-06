@@ -28,10 +28,10 @@ class DataTransferInstructions {
                 }
                 if (/[a-dA-D]/.test(destination)) {
                     let mod = ModBinaryMap.get('0D')
-                    let rbym = RByMBinaryMap.get('D16').replace(RByMBinaryMap.get('D16').slice(2), '')
-                    let reg = `${RByMBinaryMap.get('D16').slice(2)}${RegisterBinaryMap.get(destination)}`
-                    let binary8Bit = `1000 1000 ${mod}${rbym} ${reg}`;
-                    let binary16Bit = `1000 1001 ${mod}${rbym} ${reg}`;
+                    let rbym = RByMBinaryMap.get('D16')
+                    let reg = RegisterBinaryMap.get(destination)
+                    let binary8Bit = `1000 1010 ${mod}${reg.replace(reg.slice(2), '')} ${reg.slice(2)}${rbym}`;
+                    let binary16Bit = `1000 1011 ${mod}${reg.replace(reg.slice(2), '')} ${reg.slice(2)}${rbym}`;
                     hexCode = ''
                     binary8Bit.split(' ').forEach(binaryNibble => {
                         hexCode += `${BinaryHexMap.get(binaryNibble)}`
