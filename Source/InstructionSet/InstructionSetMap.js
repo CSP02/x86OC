@@ -1,5 +1,6 @@
-const InstructionSetMap = new Map()
-InstructionSetMap.set('DTI', ['mov'])
-InstructionSetMap.set('AI', ['add', 'sub', 'mul', 'div'])
+const InstructionSetMap = new Map(
+    [['DTI', ['mov']],
+    ['AI', ['add', 'sub', 'mul', 'div']]]
+)
 
-module.exports = {InstructionSetMap : InstructionSetMap}
+module.exports = { InstructionSetMap: InstructionSetMap }

@@ -1,61 +1,58 @@
-const BinaryHexMap = new Map();
-BinaryHexMap.set('0000', 0)
-BinaryHexMap.set('0001', 1)
-BinaryHexMap.set('0010', 2)
-BinaryHexMap.set('0011', 3)
-BinaryHexMap.set('0100', 4)
-BinaryHexMap.set('0101', 5)
-BinaryHexMap.set('0110', 6)
-BinaryHexMap.set('0111', 7)
-BinaryHexMap.set('1000', 8)
-BinaryHexMap.set('1001', 9)
-BinaryHexMap.set('1010', 'A')
-BinaryHexMap.set('1011', 'B')
-BinaryHexMap.set('1100', 'C')
-BinaryHexMap.set('1101', 'D')
-BinaryHexMap.set('1110', 'E')
-BinaryHexMap.set('1111', 'F')
+const BinaryHexMap = new Map(
+    [['0000', 0],
+    ['0001', 1],
+    ['0010', 2],
+    ['0011', 3],
+    ['0100', 4],
+    ['0101', 5],
+    ['0110', 6],
+    ['0111', 7],
+    ['1000', 8],
+    ['1001', 9],
+    ['1010', 'A'],
+    ['1011', 'B'],
+    ['1100', 'C'],
+    ['1101', 'D'],
+    ['1110', 'E'],
+    ['1111', 'F']]
+)
 
-const RegisterBinaryMap = new Map()
-RegisterBinaryMap.set('ax', '000')
-RegisterBinaryMap.set('al', '000')
-RegisterBinaryMap.set('cx', '001')
-RegisterBinaryMap.set('cl', '001')
-RegisterBinaryMap.set('dx', '010')
-RegisterBinaryMap.set('dl', '010')
-RegisterBinaryMap.set('bx', '011')
-RegisterBinaryMap.set('bl', '011')
-RegisterBinaryMap.set('ah', '100')
-RegisterBinaryMap.set('sp', '100')
-RegisterBinaryMap.set('ch', '101')
-RegisterBinaryMap.set('bp', '101')
-RegisterBinaryMap.set('dh', '110')
-RegisterBinaryMap.set('si', '110')
-RegisterBinaryMap.set('bh', '111')
-RegisterBinaryMap.set('di', '111')
+const RegisterBinaryMap = new Map(
+    [['ax', '000'],
+    ['al', '000'],
+    ['cx', '001'],
+    ['cl', '001'],
+    ['dx', '010'],
+    ['dl', '010'],
+    ['bx', '011'],
+    ['bl', '011'],
+    ['ah', '100'],
+    ['sp', '100'],
+    ['ch', '101'],
+    ['bp', '101'],
+    ['dh', '110'],
+    ['si', '110'],
+    ['bh', '111'],
+    ['di', '111']]
+)
 
-const ModBinaryMap = new Map()
-ModBinaryMap.set('16D', '10')
-ModBinaryMap.set('8D', '01')
-ModBinaryMap.set('0D', '00')
-ModBinaryMap.set('REG2REG', '11')
+const ModBinaryMap = new Map(
+    [['16D', '10'],
+    ['8D', '01'],
+    ['0D', '00'],
+    ['REG2REG', '11']]
+)
 
-const RByMBinaryMap = new Map()
-RByMBinaryMap.set('BXSI', '000')
-RByMBinaryMap.set('BXDI', '001')
-RByMBinaryMap.set('BPSI', '010')
-RByMBinaryMap.set('BPDI', '011')
-RByMBinaryMap.set('SI', '100')
-RByMBinaryMap.set('DI', '101')
-RByMBinaryMap.set('D16', '110')
-RByMBinaryMap.set('BX', '111')
-
-const NoOperandsInstructionBinaryMap = new Map()
-NoOperandsInstructionBinaryMap.get('XLAT', 'D7h')
-NoOperandsInstructionBinaryMap.get('LAHF', '9Fh')
-NoOperandsInstructionBinaryMap.get('SAHF', '9E')
-NoOperandsInstructionBinaryMap.get('PUSHF', '9C')
-NoOperandsInstructionBinaryMap.get('POPF', '9D')
+const RByMBinaryMap = new Map(
+    [['BXSI', '000'],
+    ['BXDI', '001'],
+    ['BPSI', '010'],
+    ['BPDI', '011'],
+    ['SI', '100'],
+    ['DI', '101'],
+    ['D16', '110'],
+    ['BX', '111']]
+)
 
 module.exports = {
     BinaryHexMap: BinaryHexMap,

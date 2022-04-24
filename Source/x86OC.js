@@ -1,7 +1,10 @@
+const { ArthimeticInstructions } = require('./InstructionSet/ArithmeticInstructions/ArithmeticInstructions')
 const { DataTransferInstructions } = require('./InstructionSet/DataTransferInstructions/DataTransferInstructions')
 const { InstructionSetMap } = require('./InstructionSet/InstructionSetMap')
 
 const DTI = new DataTransferInstructions()
+const AI = new ArthimeticInstructions()
+
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -28,7 +31,9 @@ function findInstructionType(instructions) {
             case InstructionSetMap.get('DTI')[InstructionSetMap.get('DTI').indexOf(instruction)]:
                 DTI.findAddressingModeAndGenOpCode(instructions);
                 break;
-
+            case InstructionSetMap.get('AI')[InstructionSetMap.get('AI').indexOf(instruction)]:
+                AI.findAddressingModeAndGenOpCode(instructions);
+                break;
             default:
                 console.log(`Unknown instruction ${instructions[0]}`)
                 break;
