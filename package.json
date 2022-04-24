@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "nodejs": "^0.0.0"
-  }
+  },
+  "name": "x86oc",
+  "description": "![x86OC](https://github.com/Chandra-sekhar-pilla/x86OC/blob/main/Resources/x86OC.png)\r An opcode converter for x86 microprocessor instructions.",
+  "version": "1.0.0-alpha",
+  "main": "Source/x86oc.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chandra-sekhar-pilla/x86OC.git"
+  },
+  "keywords": [
+    "assembler",
+    "opcode",
+    "converter",
+    "x86"
+  ],
+  "author": "CSP_02",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chandra-sekhar-pilla/x86OC/issues"
+  },
+  "homepage": "https://github.com/Chandra-sekhar-pilla/x86OC#readme"
 }
